@@ -84,6 +84,13 @@ Once compiled, you can run the tool from your terminal.
 
 ## Report Structure
 
+
+The generated text file is structured for readability. Each command's output is separated by a clear header that includes a description and the exact command that was run.
+
+For commands with automated analysis, a special `>>> Automated Analysis` section will appear directly below the command's raw output, highlighting any noteworthy findings.
+
+**Example Snippet from a Report:**
+
 ```
 Process Snapshot (Top)
 
@@ -100,9 +107,3 @@ Automated Analysis
 	•	No processes found with high Memory (>50%) usage.
 
 ```
-
-The generated text file is structured for readability. Each command's output is separated by a clear header that includes a description and the exact command that was run.
-
-For commands with automated analysis, a special `>>> Automated Analysis` section will appear directly below the command's raw output, highlighting any noteworthy findings.
-
-**Example Snippet from a Report:**
