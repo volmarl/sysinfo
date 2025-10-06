@@ -84,6 +84,23 @@ Once compiled, you can run the tool from your terminal.
 
 ## Report Structure
 
+```
+Process Snapshot (Top)
+
+
+CMD: top -n3 -b
+
+================================================================================
+top - 08:50:37 up 10 days, 15:23, 1 user, load average: 0.15, 0.05, 0.01
+...
+(top command output here)
+...
+Automated Analysis
+	•	[WARNING] High CPU Usage Detected: Process 'bad_process' (PID 12345) is using 99.5% CPU.
+	•	No processes found with high Memory (>50%) usage.
+
+```
+
 The generated text file is structured for readability. Each command's output is separated by a clear header that includes a description and the exact command that was run.
 
 For commands with automated analysis, a special `>>> Automated Analysis` section will appear directly below the command's raw output, highlighting any noteworthy findings.
